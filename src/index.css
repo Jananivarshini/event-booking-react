@@ -34,20 +34,18 @@ transform: scale(0.95);
 .section{
   padding: 90px 15%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 40px;
+  align-items: center;
 
-}
-.section_Title{
-  font-size: 30px;
-  color: black;
-}
-.section_Title span{
-  color: #9d7e54;
 }
 .section_Heading{
   font-size: 20px;
   font-weight: 600;
   color: black;
   font-family: 'Playfair';
+}
+.section_Title{
+  font-size: 30px;
+  color: black;
 }

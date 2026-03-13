@@ -9,7 +9,7 @@ function Nav(){
     return(
         <div className={navCSS.nav_wrapper}>
           <div className={navCSS.logo}>
-            <a href="#"><span>vibe</span>NoW</a>
+            <a href="#"><span>Vibe</span>NoW</a>
             </div> 
             <ul ref={menu}>
                 <li><a href="#">Home</a></li>
