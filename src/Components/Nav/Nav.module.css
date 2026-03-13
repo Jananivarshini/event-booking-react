@@ -22,7 +22,6 @@
 }
 .nav_wrapper .logo a{
     font-size: 25px;
-    font-size: 700;
     color: white;
 }
 .nav_wrapper .logo a span{
@@ -43,12 +42,11 @@
  transform: translateX(-50%);
  height: 5px;
  width: 5px;
- background-color: white;
  border-radius: 50%;
  background-color: orangered;
  transition: .2s;
 }
-.nav_wrapper ul li:hover:after{
+.nav_wrapper ul li:hover::after{
     background-color: orangered;
 }
 .nav_wrapper ul li a{
