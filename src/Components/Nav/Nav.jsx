@@ -16,8 +16,8 @@ function Nav(){
                  <li><a href="#">About</a></li>
                  <li><a href="#">Categories</a></li>
                   <li><a href="#">Events</a></li>
-                   <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Blogs</a></li>
+                   {/* <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blogs</a></li> */}
 
             </ul>
             <div className={navCSS.Nav_btns}>

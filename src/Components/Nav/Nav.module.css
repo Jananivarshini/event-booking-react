@@ -10,6 +10,7 @@
     top: 0;
     z-index: 99;
 }
+
 .nav_wrapper::after{
     content: "";
    position: absolute;
@@ -20,6 +21,7 @@
    background: linear-gradient(0, transparent, black);
    z-index: -11;
 }
+
 .nav_wrapper .logo a{
     font-size: 25px;
     color: white;
@@ -30,21 +32,8 @@
 .nav_wrapper ul li{
     display: inline-block;
     margin: 0 20px;
-    position: relative;
-    
+    position: relative;   
 
-}
-.nav_wrapper ul li::after{
- position: absolute;
- content: '';
- top: 10px;
- left: -10px;
- transform: translateX(-50%);
- height: 5px;
- width: 5px;
- border-radius: 50%;
- background-color: orangered;
- transition: .2s;
 }
 .nav_wrapper ul li:hover::after{
     background-color: orangered;
@@ -54,6 +43,7 @@
     font-weight: 500;
     font-family: 'Outfit';
     font-size: 15px;
+    
 }
 .Nav_btns{
     display: flex;

@@ -1,0 +1,97 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.Card_content{
+    position: relative;
+    top: 30%;
+    
+}
+.card_container{
+    perspective: 1000px;
+}
+.card{
+    width: 100%;
+    height: 320px;
+    padding: 25px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: .6s;
+    color: black;
+
+
+}
+.card:hover{
+   transform: rotateY(180deg);
+}
+.Card_front , .Card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.Card_front{
+    background: url(./../../assets/b1.avif);
+    background-size: auto;
+    background-size: cover;
+    justify-content: end;
+}
+.Card_front button{
+    width: 50%;
+    position: absolute;
+    top: 45%;
+}
+.Card_back{
+    background: url(./../../assets/b1.avif);
+    transform: rotateY(180deg);
+    background-size: cover;
+    z-index: 1;
+    padding: 15px;
+}
+.Card_back::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,0.4);
+    z-index: -1;
+    border-radius: 20px;
+}
+.Card_back .Card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.BookNow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.BookNow i{
+    height: 100%;
+    width: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.Card_front2{
+    background: url(./../../assets/b2.avif);
+    background-size: cover;
+}
+.Card_back2{
+    background: url(./../../assets/b2.avif);
+    background-size: cover;
+}

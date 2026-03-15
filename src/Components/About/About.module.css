@@ -1,17 +1,15 @@
 .about_wrapper{
-    flex-direction: row;
-}
-
-.about_img{
-    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
 }
+
+
 .about_img img{
     height: 100%;
     width: 100%;
     border-radius: 20px;
+   
 }
 .about_content{
     width: 50%;
@@ -82,9 +80,7 @@
         width: 90%;
     }
     .about_img img{
-       height: 80%;
-       width: 100%;
-
+       display: none;
     }
     .about_content{
         width: 100%;

@@ -8,7 +8,7 @@ function About(){
             <img src={aboutImg} alt="about-img" />
            </div>
            <div className={aboutCSS.about_content}>
-            <small className="section_Heading">VibeNoW Events</small>
+            <small className="section_Heading">About VibeNoW Events</small>
             <h2 className="section_Title">Turning Your Special Moments into Beautiful Memories</h2>
             <p><span>VibeNoW</span> is an event management platform designed to help people organize and book events easily.
 We believe every celebration deserves perfect planning. Our team works with trusted vendors, creative planners, and experienced coordinators to make your event smooth and memorable.
