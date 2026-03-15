@@ -4,6 +4,7 @@ import Nav from './Components/Nav/Nav'
 import About from './Components/About/About'
 import Services from './Components/Services/Services'
 import Events from './Components/Events/Events'
+import Footer from './Components/Footer/Footer'
 function App() {
   return (
 <>
@@ -12,6 +13,7 @@ function App() {
 <About/>
 <Services/>
 <Events/>
+<Footer/>
 </>
    
   )
