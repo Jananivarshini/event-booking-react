@@ -49,3 +49,6 @@ transform: scale(0.95);
   font-size: 30px;
   color: black;
 }
+span{
+  color: orangered;
+}

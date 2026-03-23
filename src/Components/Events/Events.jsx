@@ -1,7 +1,14 @@
 import React from "react";
 import eventsCSS from './../Events/Events.module.css'
+import Nav from "../Nav/Nav";
+import Payment from "../Payment/Payment";
+import { useNavigate } from "react-router-dom";
 function Events(){
+     const navigate =useNavigate();
     return(
+       
+        <><Nav/>
+        
        <div className={`${eventsCSS.events_container} section`}>
         
         <small className="section_Heading">Events We Organize</small>
@@ -21,8 +28,8 @@ function Events(){
                             <p> - Photo & Video Service</p>
                         </div>
                         <div className={eventsCSS.BookNow}>
-                            <button>Book Now</button>
-                            <i className="ri-arrow-right-line"></i>
+                            <button onClick={()=>navigate('/Payment')}>Book Now</button>
+                           
                         </div>
 
                     </div>
@@ -47,7 +54,7 @@ function Events(){
                         </div>
                         <div className={eventsCSS.BookNow}>
                             <button>Book Now</button>
-                            <i className="ri-arrow-right-line"></i>
+                            
                         </div>
 
                     </div>
@@ -73,7 +80,7 @@ function Events(){
                         </div>
                         <div className={eventsCSS.BookNow}>
                             <button>Book Now</button>
-                            <i className="ri-arrow-right-line"></i>
+                            
                         </div>
 
                     </div>
@@ -98,7 +105,7 @@ function Events(){
                         </div>
                         <div className={eventsCSS.BookNow}>
                             <button>Book Now</button>
-                            <i className="ri-arrow-right-line"></i>
+                           
                         </div>
 
                     </div>
@@ -124,7 +131,7 @@ function Events(){
                         </div>
                         <div className={eventsCSS.BookNow}>
                             <button>Book Now</button>
-                            <i className="ri-arrow-right-line"></i>
+                            
                         </div>
 
                     </div>
@@ -149,7 +156,7 @@ function Events(){
                         </div>
                         <div className={eventsCSS.BookNow}>
                             <button>Book Now</button>
-                            <i className="ri-arrow-right-line"></i>
+                            
                         </div>
 
                     </div>
@@ -157,7 +164,7 @@ function Events(){
 
             </div>
         </div>
-    </div>
+    </div></>
     
     )
 }

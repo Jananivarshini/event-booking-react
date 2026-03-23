@@ -1,12 +1,13 @@
 import React from 'react'
-//import headerCSS from './Header.module.css'
-//import headerCSS from './../Header/Header.module.css'
+import Nav from '../Nav';
 import headerCSS from "./Header.module.css";
 import {Swiper, SwiperSlide}from 'swiper/react'
 import 'swiper/css'
 import {Autoplay, Parallax} from"swiper/modules";
 function Header(){
   return (
+    <><Nav/>
+    
     <div className={headerCSS.header_wrapper}>
       <Swiper 
        slidesPerView={1}
@@ -48,7 +49,7 @@ function Header(){
             </div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </div></>
   )
 }
 

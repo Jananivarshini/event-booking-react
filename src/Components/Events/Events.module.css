@@ -1,6 +1,6 @@
 .cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr)!important;
     gap: 30px;
     
 }
@@ -74,20 +74,12 @@
 }
 .BookNow{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     align-items: center;
+
 }
-.BookNow i{
-    height: 100%;
-    width: 50px;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
+
 .Card_front2{
     background: url(./../../assets/b2.avif);
     background-size: cover;

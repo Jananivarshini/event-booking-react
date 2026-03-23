@@ -1,8 +1,10 @@
 import React from "react";
 import aboutCSS from './../About/About.module.css'
 import aboutImg from './../../assets/about-one.avif'
+import Nav from "../Nav/Nav";
 function About(){
     return(
+        <><Nav/>
         <div className={`${aboutCSS.about_wraper} section`}>
            <div className={aboutCSS.about_img}>
             <img src={aboutImg} alt="about-img" />
@@ -20,7 +22,7 @@ Whether it is a wedding, birthday, corporate event, or a small celebration, we e
 
             </div>
            </div>
-        </div>
+        </div></>
     )
 }
 export default About

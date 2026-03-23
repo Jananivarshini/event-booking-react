@@ -1,7 +1,9 @@
 import React from "react";
+import Nav from "../Nav/Nav";
 import ServicesCSS from './../Services/Services.module.css'
 function Services(){
     return(
+         <><Nav/>
         <div className={`${ServicesCSS.Service_wrapper} section`}>
             <small className="section_Heading">Our Event Categories</small>
             <h2 className="section_Title">Explore Event Services</h2>
@@ -42,7 +44,7 @@ function Services(){
                     <p>- Crowd Management</p>
                 </div>
             </div>
-        </div>
+        </div></>
     )
 }
 export default Services
